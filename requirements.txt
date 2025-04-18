@@ -1,0 +1,18 @@
+# Quantum computing libraries
+qiskit==0.37.0          # Qiskit for quantum computing
+cirq==0.13.0            # Cirq for quantum circuit simulation
+
+# Numerical and scientific computing
+numpy==1.23.0           # NumPy for numerical operations
+scipy==1.9.0            # SciPy for scientific computing
+
+# Testing libraries
+pytest==7.1.0           # Pytest for running tests
+pytest-cov==3.0.0       # Pytest coverage for measuring code coverage
+
+# Documentation generation
+sphinx==5.0.0           # Sphinx for generating documentation
+sphinx-rtd-theme==1.0.0  # Read the Docs theme for Sphinx
+
+# Additional utilities
+matplotlib==3.5.0       # Matplotlib for plotting and visualization
