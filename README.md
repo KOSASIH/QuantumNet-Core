@@ -26,9 +26,9 @@ QuantumNet-Core is an advanced quantum computing framework designed to facilitat
 To install QuantumNet-Core, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/KOSASIH/QuantumNet-Core.git
-cd QuantumNet-Core
-pip install -r requirements.txt
+1 git clone https://github.com/KOSASIH/QuantumNet-Core.git
+2 cd QuantumNet-Core
+3 pip install -r requirements.txt
 ```
 
 ## Usage
@@ -77,9 +77,9 @@ QuantumNet-Core is an advanced quantum computing framework designed to facilitat
 To install QuantumNet-Core, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/KOSASIH/QuantumNet-Core.git
-cd QuantumNet-Core
-pip install -r requirements.txt
+1 git clone https://github.com/KOSASIH/QuantumNet-Core.git
+2 cd QuantumNet-Core
+3 pip install -r requirements.txt
 ```
 
 ## Usage
@@ -91,11 +91,11 @@ After installation, you can start using QuantumNet-Core by importing the necessa
 Here’s a simple example of how to use the entanglement management module:
 
 ```python
-from src.entanglement.entangler import create_entangled_pair
-
-# Create an entangled pair of qubits
-qubit1, qubit2 = create_entangled_pair()
-print(f"Entangled Qubits: {qubit1}, {qubit2}")
+1 from src.entanglement.entangler import create_entangled_pair
+2 
+3 # Create an entangled pair of qubits
+4 qubit1, qubit2 = create_entangled_pair()
+5 print(f"Entangled Qubits: {qubit1}, {qubit2}")
 ```
 
 ## Documentation
