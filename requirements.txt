@@ -1,5 +1,5 @@
 # Quantum computing libraries
-qiskit==0.37.0          # Qiskit for quantum computing
+qiskit==1.4.2          # Qiskit for quantum computing
 cirq==0.13.0            # Cirq for quantum circuit simulation
 
 # Numerical and scientific computing
