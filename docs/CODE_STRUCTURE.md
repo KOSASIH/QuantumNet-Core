@@ -6,145 +6,145 @@ QuantumNet-Core/
 ├── CHANGELOG.md
 ├── requirements.txt
 │
-├── docs/
-│   ├── index.md
-│   ├── installation.md
-│   ├── usage.md
-│   ├── algorithms.md
-│   ├── architecture.md
-│   ├── tutorials/
-│   │   ├── entanglement_tutorial.md
-│   │   ├── quantum_state_tutorial.md
-│   │   ├── circuit_tutorial.md
-│   │   ├── qml_tutorial.md         # Tutorial QML
-│   │   ├── protocol_tutorial.md    # Tutorial protokol quantum
-│   │   └── dashboard_tutorial.md   # Tutorial dashboard
-│   └── api_reference.md
+├── docs/                        # Documentation files
+│   ├── index.md                 # Main documentation index
+│   ├── installation.md          # Instructions for installing the project
+│   ├── usage.md                 # Guide on how to use the project
+│   ├── algorithms.md            # Overview of algorithms implemented
+│   ├── architecture.md          # Description of the project architecture
+│   ├── tutorials/               # Tutorials for users
+│   │   ├── entanglement_tutorial.md  # Tutorial on quantum entanglement
+│   │   ├── quantum_state_tutorial.md # Tutorial on quantum states
+│   │   ├── circuit_tutorial.md  # Tutorial on quantum circuits
+│   │   ├── qml_tutorial.md      # Tutorial on Quantum Machine Learning (QML)
+│   │   ├── protocol_tutorial.md # Tutorial on quantum protocols
+│   │   └── dashboard_tutorial.md # Tutorial on the web dashboard
+│   └── api_reference.md         # API reference documentation
 │
-├── src/
-│   ├── entanglement/
-│   │   ├── __init__.py
-│   │   ├── entangler.py
-│   │   ├── entanglement_utils.py
-│   │   ├── entanglement_tests.py
-│   │   └── entanglement_visualization.py
-│   ├── quantum_state/
-│   │   ├── __init__.py
-│   │   ├── state_vector.py
-│   │   ├── density_matrix.py
-│   │   ├── state_tests.py
-│   │   └── state_visualization.py
-│   ├── quantum_circuit/
-│   │   ├── __init__.py
-│   │   ├── circuit.py
-│   │   ├── gate_operations.py
-│   │   ├── circuit_tests.py
-│   │   └── circuit_visualization.py
-│   ├── qml/                       # NEW: Quantum Machine Learning
-│   │   ├── __init__.py
-│   │   ├── entanglement_optimizer.py
-│   │   ├── qml_utils.py
-│   │   ├── qml_visualization.py
-│   │   └── qml_tests.py
-│   ├── qnn/                       # NEW: Quantum Neural Network
-│   │   ├── __init__.py
-│   │   ├── state_predictor.py
-│   │   ├── qnn_utils.py
-│   │   ├── qnn_visualization.py
-│   │   └── qnn_tests.py
-│   ├── network/                   # NEW: Network protocols
-│   │   ├── __init__.py
-│   │   ├── protocols/
-│   │   │   ├── __init__.py
-│   │   │   ├── qkd_bb84.py
-│   │   │   ├── teleportation.py
-│   │   │   ├── entanglement_routing.py
-│   │   │   ├── protocol_utils.py
-│   │   │   └── protocol_tests.py
-│   │   ├── p2p_protocol.py
-│   │   └── repeater.py
-│   ├── error_correction/          # NEW: Quantum Error Correction
-│   │   ├── __init__.py
-│   │   ├── surface_code.py
-│   │   ├── concatenated_code.py
-│   │   ├── qec_utils.py
-│   │   ├── qec_visualization.py
-│   │   └── qec_tests.py
-│   ├── consensus/                 # NEW: Quantum Consensus
-│   │   ├── __init__.py
-│   │   ├── quantum_consensus.py
-│   │   ├── voting_protocol.py
-│   │   ├── consensus_utils.py
-│   │   └── consensus_tests.py
-│   ├── dashboard/                 # NEW: Web-based Dashboard
-│   │   ├── __init__.py
-│   │   ├── backend/
-│   │   │   ├── api.py
-│   │   │   ├── server.py
-│   │   │   └── data_collector.py
-│   │   ├── frontend/
-│   │   │   ├── static/
-│   │   │   ├── templates/
-│   │   │   └── app.js
-│   │   └── dashboard_tests.py
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── logger.py
-│   │   ├── config.py
-│   │   ├── math_utils.py
-│   │   ├── file_utils.py
-│   │   └── performance_monitor.py
-│   ├── integration/
-│   │   ├── __init__.py
-│   │   ├── qiskit_integration.py
-│   │   ├── cirq_integration.py
-│   │   └── external_api.py
-│   └── main.py
+├── src/                         # Source code for the project
+│   ├── entanglement/            # Module for quantum entanglement
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── entangler.py         # Functions for creating entangled states
+│   │   ├── entanglement_utils.py # Utility functions for entanglement
+│   │   ├── entanglement_tests.py # Tests for entanglement functionalities
+│   │   └── entanglement_visualization.py # Visualization tools for entanglement
+│   ├── quantum_state/           # Module for quantum states
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── state_vector.py      # Functions for state vector representation
+│   │   ├── density_matrix.py    # Functions for density matrix representation
+│   │   ├── state_tests.py       # Tests for quantum state functionalities
+│   │   └── state_visualization.py # Visualization tools for quantum states
+│   ├── quantum_circuit/         # Module for quantum circuits
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── circuit.py           # Functions for creating and manipulating quantum circuits
+│   │   ├── gate_operations.py    # Functions for quantum gate operations
+│   │   ├── circuit_tests.py      # Tests for quantum circuit functionalities
+│   │   └── circuit_visualization.py # Visualization tools for quantum circuits
+│   ├── qml/                     # Module for Quantum Machine Learning
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── entanglement_optimizer.py # Functions for optimizing entangled states
+│   │   ├── qml_utils.py         # Utility functions for QML
+│   │   ├── qml_visualization.py  # Visualization tools for QML
+│   │   └── qml_tests.py         # Tests for QML functionalities
+│   ├── qnn/                     # Module for Quantum Neural Networks
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── state_predictor.py   # Functions for predicting quantum states
+│   │   ├── qnn_utils.py         # Utility functions for QNN
+│   │   ├── qnn_visualization.py  # Visualization tools for QNN
+│   │   └── qnn_tests.py         # Tests for QNN functionalities
+│   ├── network/                 # Module for network protocols
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── protocols/           # Submodule for various protocols
+│   │   │   ├── __init__.py      # Package initialization
+│   │   │   ├── qkd_bb84.py      # Implementation of BB84 quantum key distribution protocol
+│   │   │   ├── teleportation.py  # Implementation of quantum teleportation protocol
+│   │   │   ├── entanglement_routing.py # Functions for routing entangled states
+│   │   │   ├── protocol_utils.py # Utility functions for protocols
+│   │   │   └── protocol_tests.py # Tests for protocol functionalities
+│   │   ├── p2p_protocol .py      # Implementation of peer-to-peer communication protocol
+│   │   └── repeater.py          # Functions for quantum repeater protocols
+│   ├── error_correction/        # Module for quantum error correction
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── surface_code.py      # Implementation of surface code error correction
+│   │   ├── concatenated_code.py  # Implementation of concatenated error correction codes
+│   │   ├── qec_utils.py         # Utility functions for quantum error correction
+│   │   ├── qec_visualization.py  # Visualization tools for error correction
+│   │   └── qec_tests.py         # Tests for error correction functionalities
+│   ├── consensus/               # Module for quantum consensus algorithms
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── quantum_consensus.py  # Implementation of quantum consensus algorithms
+│   │   ├── voting_protocol.py    # Functions for voting protocols in consensus
+│   │   ├── consensus_utils.py    # Utility functions for consensus
+│   │   └── consensus_tests.py    # Tests for consensus functionalities
+│   ├── dashboard/               # Module for the web-based dashboard
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── backend/             # Backend components of the dashboard
+│   │   │   ├── api.py           # API for dashboard interactions
+│   │   │   ├── server.py        # Server setup for the dashboard
+│   │   │   └── data_collector.py # Functions for collecting data for the dashboard
+│   │   ├── frontend/            # Frontend components of the dashboard
+│   │   │   ├── static/          # Static files for the frontend
+│   │   │   ├── templates/       # HTML templates for the dashboard
+│   │   │   └── app.js           # JavaScript for frontend functionality
+│   │   └── dashboard_tests.py    # Tests for dashboard functionalities
+│   ├── utils/                   # Utility functions for the project
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── logger.py            # Logging utilities
+│   │   ├── config.py            # Configuration management
+│   │   ├── math_utils.py        # Mathematical utility functions
+│   │   ├── file_utils.py        # File handling utilities
+│   │   └── performance_monitor.py # Performance monitoring tools
+│   ├── integration/             # Module for integrating with external libraries
+│   │   ├── __init__.py          # Package initialization
+│   │   ├── qiskit_integration.py # Integration with Qiskit
+│   │   ├── cirq_integration.py  # Integration with Cirq
+│   │   └── external_api.py      # Functions for interacting with external APIs
+│   └── main.py                  # Main entry point for the application
 │
-├── tests/
-│   ├── __init__.py
-│   ├── test_entanglement.py
-│   ├── test_quantum_state.py
-│   ├── test_quantum_circuit.py
-│   ├── test_qml.py                # NEW: Tes untuk QML
-│   ├── test_qnn.py                # NEW: Tes untuk QNN
-│   ├── test_network.py            # NEW: Tes untuk protokol jaringan
-│   ├── test_error_correction.py   # NEW: Tes untuk QEC
-│   ├── test_consensus.py          # NEW: Tes untuk konsensus
-│   ├── test_dashboard.py          # NEW: Tes untuk dashboard
-│   ├── test_utils.py
-│   └── test_integration.py
+├── tests/                       # Test suite for the project
+│   ├── __init__.py              # Package initialization
+│   ├── test_entanglement.py      # Tests for entanglement module
+│   ├── test_quantum_state.py     # Tests for quantum state module
+│   ├── test_quantum_circuit.py   # Tests for quantum circuit module
+│   ├── test_qml.py               # Tests for Quantum Machine Learning module
+│   ├── test_qnn.py               # Tests for Quantum Neural Network module
+│   ├── test_network.py           # Tests for network protocols
+│   ├── test_error_correction.py   # Tests for error correction module
+│   ├── test_consensus.py         # Tests for consensus module
+│   ├── test_dashboard.py         # Tests for dashboard module
+│   ├── test_utils.py             # Tests for utility functions
+│   └── test_integration.py       # Tests for integration functionalities
 │
-├── examples/
-│   ├── entanglement_example.py
-│   ├── quantum_state_example.py
-│   ├── circuit_example.py
-│   ├── qml_example.py             # NEW: Contoh penggunaan QML
-│   ├── qnn_example.py             # NEW: Contoh penggunaan QNN
-│   ├── protocol_example.py        # NEW: Contoh penggunaan protokol
-│   ├── qec_example.py             # NEW: Contoh penggunaan QEC
-│   ├── consensus_example.py       # NEW: Contoh penggunaan konsensus
-│   ├── dashboard_example.py       # NEW: Contoh penggunaan dashboard
-│   └── integration_example.py
+├── examples/                    # Example scripts demonstrating usage
+│   ├── entanglement_example.py   # Example usage of entanglement module
+│   ├── quantum_state_example.py   # Example usage of quantum state module
+│   ├── circuit_example.py        # Example usage of quantum circuit module
+│   ├── qml_example.py            # Example usage of Quantum Machine Learning
+│   ├── qnn_example.py            # Example usage of Quantum Neural Network
+│   ├── protocol_example.py       # Example usage of network protocols
+│   ├── qec_example.py            # Example usage of quantum error correction
+│   ├── consensus_example.py       # Example usage of consensus algorithms
+│   ├── dashboard_example.py       # Example usage of the web-based dashboard
+│   └── integration_example.py      # Example usage of integration with external libraries
 │
-├── benchmarks/
-│   ├── benchmark_entanglement.py
-│   ├── benchmark_quantum_state.py
-│   ├── benchmark_quantum_circuit.py
-│   ├── benchmark_qml.py           # NEW: Benchmark QML
-│   ├── benchmark_qnn.py           # NEW: Benchmark QNN
-│   ├── benchmark_protocols.py     # NEW: Benchmark protokol
-│   └── benchmark_qec.py           # NEW: Benchmark QEC
+├── benchmarks/                   # Benchmarking scripts for performance evaluation
+│   ├── benchmark_entanglement.py   # Benchmarking entanglement functionalities
+│   ├── benchmark_quantum_state.py   # Benchmarking quantum state functionalities
+│   ├── benchmark_quantum_circuit.py # Benchmarking quantum circuit functionalities
+│   ├── benchmark_qml.py            # Benchmarking Quantum Machine Learning functionalities
+│   ├── benchmark_qnn.py            # Benchmarking Quantum Neural Network functionalities
+│   ├── benchmark_protocols.py      # Benchmarking network protocols
+│   └── benchmark_qec.py            # Benchmarking quantum error correction functionalities
 │
-├── scripts/
-│   ├── setup_environment.py
-│   ├── run_tests.py
-│   ├── generate_docs.py
-│   └── start_dashboard.py         # NEW: Script untuk menjalankan dashboard
+├── scripts/                       # Utility scripts for project management
+│   ├── setup_environment.py        # Script for setting up the development environment
+│   ├── run_tests.py                # Script for running the test suite
+│   ├── generate_docs.py            # Script for generating documentation
+│   └── start_dashboard.py          # Script for launching the web-based dashboard
 │
-└── .github/                      # NEW: GitHub configurations
-    ├── ISSUE_TEMPLATE.md
-    ├── PULL_REQUEST_TEMPLATE.md
-    └── workflows/
-        ├── test.yml              # CI/CD untuk testing
-        └── docs.yml              # CI/CD untuk dokumentasi
+└── .github/                       # GitHub configurations for project management
+    ├── ISSUE_TEMPLATE.md           # Template for GitHub issues
+    ├── PULL_REQUEST_TEMPLATE.md     # Template for GitHub pull requests
+    └── workflows/                  # CI/CD workflows for automation
+        ├── test.yml                # Continuous integration workflow for testing
+        └── docs.yml                # Continuous integration workflow for documentation generation
