@@ -1,0 +1,39 @@
+<!-- src/dashboard/frontend/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time network monitoring dashboard for tracking metrics and performance.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Network Monitoring Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Network Monitoring Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="metrics-section">
+            <input type="text" id="filterInput" placeholder="Filter metrics..." aria-label="Filter metrics">
+            <div id="metrics" class="metric-container"></div>
+            <div id="notification" class="notification"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
