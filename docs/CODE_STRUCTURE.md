@@ -1,82 +1,150 @@
 QuantumNet-Core/
 │
-├── README.md                  # Project overview, installation instructions, and usage guidelines
-├── LICENSE                    # License information for the project
-├── CONTRIBUTING.md            # Guidelines for contributing to the project
-├── CHANGELOG.md               # Record of changes and updates to the project
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+├── requirements.txt
 │
-├── docs/                      # Documentation files
-│   ├── index.md               # Main documentation index
-│   ├── installation.md         # Installation instructions
-│   ├── usage.md               # Usage examples and API documentation
-│   ├── algorithms.md          # Detailed descriptions of core algorithms
-│   ├── architecture.md         # Overview of the system architecture and design patterns
-│   ├── tutorials/              # Step-by-step tutorials for users
+├── docs/
+│   ├── index.md
+│   ├── installation.md
+│   ├── usage.md
+│   ├── algorithms.md
+│   ├── architecture.md
+│   ├── tutorials/
 │   │   ├── entanglement_tutorial.md
 │   │   ├── quantum_state_tutorial.md
-│   │   └── circuit_tutorial.md
-│   └── api_reference.md        # API reference documentation for all modules
+│   │   ├── circuit_tutorial.md
+│   │   ├── qml_tutorial.md         # Tutorial QML
+│   │   ├── protocol_tutorial.md    # Tutorial protokol quantum
+│   │   └── dashboard_tutorial.md   # Tutorial dashboard
+│   └── api_reference.md
 │
-├── src/                       # Source code for the QuantumNet-Core
-│   ├── entanglement/          # Module for entanglement management algorithms
-│   │   ├── __init__.py        # Makes the directory a package
-│   │   ├── entangler.py       # Core entanglement management functions
-│   │   ├── entanglement_utils.py # Utility functions for entanglement
-│   │   ├── entanglement_tests.py # Unit tests for entanglement module
-│   │   └── entanglement_visualization.py # Visualization tools for entanglement states
-│   │
-│   ├── quantum_state/         # Module for quantum state manipulation
-│   │   ├── __init__.py        # Makes the directory a package
-│   │   ├── state_vector.py     # Functions for state vector representation
-│   │   ├── density_matrix.py    # Functions for density matrix representation
-│   │   ├── state_tests.py       # Unit tests for quantum state module
-│   │   └── state_visualization.py # Visualization tools for quantum states
-│   │
-│   ├── quantum_circuit/       # Module for quantum circuit representation and manipulation
-│   │   ├── __init__.py        # Makes the directory a package
-│   │   ├── circuit.py          # Core circuit management functions
-│   │   ├── gate_operations.py   # Functions for quantum gate operations
-│   │   ├── circuit_tests.py     # Unit tests for quantum circuit module
-│   │   └── circuit_visualization.py # Visualization tools for quantum circuits
-│   │
-│   ├── utils/                 # Utility functions and helpers
-│   │   ├── __init__.py        # Makes the directory a package
-│   │   ├── logger.py           # Logging utility for debugging
-│   │   ├── config.py           # Configuration management
-│   │   ├── math_utils.py       # Mathematical utilities for quantum calculations
-│   │   ├── file_utils.py       # File handling utilities for input/output operations
-│   │   └── performance_monitor.py # Tools for monitoring performance metrics
-│   │
-│   ├── integration/           # Integration with external libraries and APIs
-│   │   ├── __init__.py        # Makes the directory a package
-│   │   ├── qiskit_integration.py # Integration with Qiskit for hybrid quantum-classical computing
-│   │   ├── cirq_integration.py   # Integration with Cirq for quantum circuit simulation
-│   │   └── external_api.py       # API for external services and data sources
-│   │
-│   └── main.py                # Entry point for the QuantumNet-Core application
+├── src/
+│   ├── entanglement/
+│   │   ├── __init__.py
+│   │   ├── entangler.py
+│   │   ├── entanglement_utils.py
+│   │   ├── entanglement_tests.py
+│   │   └── entanglement_visualization.py
+│   ├── quantum_state/
+│   │   ├── __init__.py
+│   │   ├── state_vector.py
+│   │   ├── density_matrix.py
+│   │   ├── state_tests.py
+│   │   └── state_visualization.py
+│   ├── quantum_circuit/
+│   │   ├── __init__.py
+│   │   ├── circuit.py
+│   │   ├── gate_operations.py
+│   │   ├── circuit_tests.py
+│   │   └── circuit_visualization.py
+│   ├── qml/                       # NEW: Quantum Machine Learning
+│   │   ├── __init__.py
+│   │   ├── entanglement_optimizer.py
+│   │   ├── qml_utils.py
+│   │   ├── qml_visualization.py
+│   │   └── qml_tests.py
+│   ├── qnn/                       # NEW: Quantum Neural Network
+│   │   ├── __init__.py
+│   │   ├── state_predictor.py
+│   │   ├── qnn_utils.py
+│   │   ├── qnn_visualization.py
+│   │   └── qnn_tests.py
+│   ├── network/                   # NEW: Network protocols
+│   │   ├── __init__.py
+│   │   ├── protocols/
+│   │   │   ├── __init__.py
+│   │   │   ├── qkd_bb84.py
+│   │   │   ├── teleportation.py
+│   │   │   ├── entanglement_routing.py
+│   │   │   ├── protocol_utils.py
+│   │   │   └── protocol_tests.py
+│   │   ├── p2p_protocol.py
+│   │   └── repeater.py
+│   ├── error_correction/          # NEW: Quantum Error Correction
+│   │   ├── __init__.py
+│   │   ├── surface_code.py
+│   │   ├── concatenated_code.py
+│   │   ├── qec_utils.py
+│   │   ├── qec_visualization.py
+│   │   └── qec_tests.py
+│   ├── consensus/                 # NEW: Quantum Consensus
+│   │   ├── __init__.py
+│   │   ├── quantum_consensus.py
+│   │   ├── voting_protocol.py
+│   │   ├── consensus_utils.py
+│   │   └── consensus_tests.py
+│   ├── dashboard/                 # NEW: Web-based Dashboard
+│   │   ├── __init__.py
+│   │   ├── backend/
+│   │   │   ├── api.py
+│   │   │   ├── server.py
+│   │   │   └── data_collector.py
+│   │   ├── frontend/
+│   │   │   ├── static/
+│   │   │   ├── templates/
+│   │   │   └── app.js
+│   │   └── dashboard_tests.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── logger.py
+│   │   ├── config.py
+│   │   ├── math_utils.py
+│   │   ├── file_utils.py
+│   │   └── performance_monitor.py
+│   ├── integration/
+│   │   ├── __init__.py
+│   │   ├── qiskit_integration.py
+│   │   ├── cirq_integration.py
+│   │   └── external_api.py
+│   └── main.py
 │
-├── tests/                     # Directory for integration and unit tests
-│   ├── __init__.py            # Makes the directory a package
-│   ├── test_entanglement.py    # Tests for entanglement management
-│   ├── test_quantum_state.py   # Tests for quantum state manipulation
-│   ├── test_quantum_circuit.py  # Tests for quantum circuit operations
-│   ├── test_utils.py           # Tests for utility functions
-│   └── test_integration.py      # Tests for integration with external libraries
+├── tests/
+│   ├── __init__.py
+│   ├── test_entanglement.py
+│   ├── test_quantum_state.py
+│   ├── test_quantum_circuit.py
+│   ├── test_qml.py                # NEW: Tes untuk QML
+│   ├── test_qnn.py                # NEW: Tes untuk QNN
+│   ├── test_network.py            # NEW: Tes untuk protokol jaringan
+│   ├── test_error_correction.py   # NEW: Tes untuk QEC
+│   ├── test_consensus.py          # NEW: Tes untuk konsensus
+│   ├── test_dashboard.py          # NEW: Tes untuk dashboard
+│   ├── test_utils.py
+│   └── test_integration.py
 │
-├── examples/                  # Example scripts demonstrating usage of the core algorithms
-│   ├── entanglement_example.py  # Example of using entanglement management
-│   ├── quantum_state_example.py  # Example of quantum state manipulation
-│   ├── circuit_example.py       # Example of building and manipulating quantum circuits
-│   └── integration_example.py    # Example of using external integrations with Qiskit and Cirq
+├── examples/
+│   ├── entanglement_example.py
+│   ├── quantum_state_example.py
+│   ├── circuit_example.py
+│   ├── qml_example.py             # NEW: Contoh penggunaan QML
+│   ├── qnn_example.py             # NEW: Contoh penggunaan QNN
+│   ├── protocol_example.py        # NEW: Contoh penggunaan protokol
+│   ├── qec_example.py             # NEW: Contoh penggunaan QEC
+│   ├── consensus_example.py       # NEW: Contoh penggunaan konsensus
+│   ├── dashboard_example.py       # NEW: Contoh penggunaan dashboard
+│   └── integration_example.py
 │
-├── benchmarks/                 # Performance benchmarks for various algorithms and modules
-│   ├── benchmark_entanglement.py # Benchmarking entanglement management algorithms
-│   ├── benchmark_quantum_state.py # Benchmarking quantum state manipulation
-│   └── benchmark_quantum_circuit.py # Benchmarking quantum circuit operations
+├── benchmarks/
+│   ├── benchmark_entanglement.py
+│   ├── benchmark_quantum_state.py
+│   ├── benchmark_quantum_circuit.py
+│   ├── benchmark_qml.py           # NEW: Benchmark QML
+│   ├── benchmark_qnn.py           # NEW: Benchmark QNN
+│   ├── benchmark_protocols.py     # NEW: Benchmark protokol
+│   └── benchmark_qec.py           # NEW: Benchmark QEC
 │
-├── scripts/                    # Utility scripts for various tasks
-│   ├── setup_environment.py      # Script to set up the development environment
-│   ├── run_tests.py              # Script to run all tests
-│   └── generate_docs.py          # Script to generate documentation from source code
+├── scripts/
+│   ├── setup_environment.py
+│   ├── run_tests.py
+│   ├── generate_docs.py
+│   └── start_dashboard.py         # NEW: Script untuk menjalankan dashboard
 │
-└── requirements.txt            # List of dependencies required for the project
+└── .github/                      # NEW: GitHub configurations
+    ├── ISSUE_TEMPLATE.md
+    ├── PULL_REQUEST_TEMPLATE.md
+    └── workflows/
+        ├── test.yml              # CI/CD untuk testing
+        └── docs.yml              # CI/CD untuk dokumentasi
