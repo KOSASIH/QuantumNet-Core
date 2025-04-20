@@ -1,22 +1,23 @@
 # Quantum computing libraries
-qiskit==1.4.2          # Qiskit for quantum computing
+qiskit==0.45.0          # Qiskit for quantum computing
+qiskit-optimization==0.5.0  # Qiskit optimization library
+pennylane==0.33.0       # PennyLane for quantum machine learning
 cirq==0.13.0            # Cirq for quantum circuit simulation
 
 # Numerical and scientific computing
-numpy==1.23.0           # NumPy for numerical operations
+numpy==1.26.0           # NumPy for numerical operations
 scipy==1.9.0            # SciPy for scientific computing
+scikit-learn==1.3.0     # Scikit-learn for machine learning
 
-# Data visualization library
+# Data visualization libraries
 matplotlib==3.5.0       # Matplotlib for plotting and visualization
+plotly==5.15.0          # Interactive graphing library for Python
 
 # Web framework for building APIs
 fastapi==0.103.0        # FastAPI framework for building APIs with Python 3.6+ based on standard Python type hints
 
 # ASGI server for serving FastAPI applications
 uvicorn==0.23.0        # ASGI server for running FastAPI applications
-
-# Data visualization library
-plotly==5.15.0          # Interactive graphing library for Python
 
 # Testing libraries
 pytest==7.1.0           # Pytest for running tests
@@ -28,6 +29,3 @@ sphinx-rtd-theme==1.0.0  # Read the Docs theme for Sphinx
 
 # Networking library for peer-to-peer applications
 libp2p==0.1.0           # Modular network stack for building peer-to-peer applications
-
-# Quantum machine learning library
-pennylane==0.33.0       # PennyLane for quantum machine learning
