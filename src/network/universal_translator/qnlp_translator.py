@@ -54,6 +54,22 @@ class QNLPTranslator:
         """
         return self.translator_circuit(input_protocol)
 
+    def save_parameters(self, filename: str) -> None:
+        """Save the current parameters to a file.
+
+        Parameters:
+        filename (str): The name of the file to save parameters.
+        """
+        np.save(filename, self.params)
+
+    def load_parameters(self, filename: str) -> None:
+        """Load parameters from a file.
+
+        Parameters:
+        filename (str): The name of the file to load parameters from.
+        """
+        self.params = np.load(filename)
+
 # Example usage:
 if __name__ == "__main__":
     n_qubits = 3
@@ -72,3 +88,10 @@ if __name__ == "__main__":
     new_protocol = np.array([0.2, 0.3, 0.4])
     translated_output = translator.translate(new_protocol)
     print("Translated Output:", translated_output)
+
+    # Save parameters
+    translator.save_parameters("translator_params.npy")
+
+    # Load parameters
+    translator.load_parameters("translator_params.npy")
+    print("Parameters loaded successfully.")
