@@ -115,9 +115,3 @@ def generate_random_resource_scenario():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5027, debug=True)
-```
-
-### Features of `benchmark_resource_optimizer.py`:
-
-1. **Flask Web Framework**: Utilizes Flask to create a RESTful API for interacting with the benchmarking system.
-2. **Task Management**: Provides
