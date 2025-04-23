@@ -1,0 +1,84 @@
+{
+    "crisis_scenarios": [
+        {
+            "id": 1,
+            "name": "Global Pandemic",
+            "description": "A highly contagious virus spreads globally, overwhelming healthcare systems.",
+            "impact": {
+                "health": "High mortality rate, healthcare systems overwhelmed.",
+                "economy": "Severe economic downturn, increased unemployment.",
+                "society": "Social unrest due to lockdowns and restrictions."
+            },
+            "response": [
+                "Implement widespread testing and contact tracing.",
+                "Develop and distribute vaccines rapidly.",
+                "Enforce public health measures such as mask mandates and social distancing."
+            ],
+            "duration": "12-24 months",
+            "example": {
+                "initial_case": "First case reported in Wuhan, China.",
+                "spread_pattern": "Rapid spread to major cities worldwide."
+            }
+        },
+        {
+            "id": 2,
+            "name": "Natural Disaster",
+            "description": "A powerful earthquake strikes a densely populated urban area, causing widespread destruction.",
+            "impact": {
+                "health": "High number of casualties and injuries.",
+                "economy": "Significant damage to infrastructure and businesses.",
+                "society": "Displacement of thousands of residents."
+            },
+            "response": [
+                "Activate emergency response teams and resources.",
+                "Provide medical assistance and shelter to affected populations.",
+                "Conduct damage assessments and initiate recovery plans."
+            ],
+            "duration": "6-12 months",
+            "example": {
+                "initial_event": "Magnitude 7.5 earthquake strikes at 3:00 AM.",
+                "aftershocks": "Multiple aftershocks complicate rescue efforts."
+            }
+        },
+        {
+            "id": 3,
+            "name": "Cybersecurity Breach",
+            "description": "A major cybersecurity breach exposes sensitive data of millions of users.",
+            "impact": {
+                "health": "Potential for identity theft and fraud.",
+                "economy": "Loss of consumer trust, financial penalties for companies.",
+                "society": "Increased anxiety about data privacy and security."
+            },
+            "response": [
+                "Notify affected users and provide support.",
+                "Enhance security measures and protocols.",
+                "Conduct a thorough investigation and report findings."
+            ],
+            "duration": "3-6 months",
+            "example": {
+                "initial_event": "Unauthorized access detected in company database.",
+                "data_exposed": "Personal information of 10 million users compromised."
+            }
+        },
+        {
+            "id": 4,
+            "name": "Political Crisis",
+            "description": "A political scandal leads to widespread protests and calls for government reform.",
+            "impact": {
+                "health": "Potential for violence and injuries during protests.",
+                "economy": "Market instability and reduced foreign investment.",
+                "society": "Polarization and division among the population."
+            },
+            "response": [
+                "Engage in dialogue with community leaders and stakeholders.",
+                "Implement reforms to address public concerns.",
+                "Ensure public safety during protests and demonstrations."
+            ],
+            "duration": "6-12 months",
+            "example": {
+                "initial_event": "Whistleblower reveals corruption within government.",
+                "public_reaction": "Mass protests erupt in major cities."
+            }
+        }
+    ]
+}
