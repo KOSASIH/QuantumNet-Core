@@ -49,3 +49,4 @@ def api_results():
     return jsonify(counts)
 
 if __name__ == "__main__":
+    main()
