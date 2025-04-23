@@ -1,0 +1,133 @@
+{
+    "vqe_circuits": [
+        {
+            "id": 1,
+            "molecule": "H2",
+            "geometry": {
+                "bond_length": 0.74,
+                "units": "angstrom"
+            },
+            "ansatz": "RY",
+            "depth": 1,
+            "parameters": {
+                "theta": [0.5, 0.3]
+            },
+            "circuit": [
+                {
+                    "gate": "H",
+                    "qubit": 0
+                },
+                {
+                    "gate": "H",
+                    "qubit": 1
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.5,
+                    "qubit": 0
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.3,
+                    "qubit": 1
+                },
+                {
+                    "gate": "CNOT",
+                    "control": 0,
+                    "target": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "molecule": "LiH",
+            "geometry": {
+                "bond_length": 1.6,
+                "units": "angstrom"
+            },
+            "ansatz": "UCCSD",
+            "depth": 2,
+            "parameters": {
+                "theta": [0.4, 0.2, 0.1, 0.6]
+            },
+            "circuit": [
+                {
+                    "gate": "H",
+                    "qubit": 0
+                },
+                {
+                    "gate": "H",
+                    "qubit": 1
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.4,
+                    "qubit": 0
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.2,
+                    "qubit": 1
+                },
+                {
+                    "gate": "CNOT",
+                    "control": 0,
+                    "target": 1
+                },
+                {
+                    "gate": "RZ",
+                    "angle": 0.1,
+                    "qubit": 0
+                },
+                {
+                    "gate": "RZ",
+                    "angle": 0.6,
+                    "qubit": 1
+                },
+                {
+                    "gate": "CNOT",
+                    "control": 1,
+                    "target": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "molecule": "BeH2",
+            "geometry": {
+                "bond_length": 1.2,
+                "units": "angstrom"
+            },
+            "ansatz": "UCC",
+            "depth": 1,
+            "parameters": {
+                "theta": [0.5, 0.7]
+            },
+            "circuit": [
+                {
+                    "gate": "H",
+                    "qubit": 0
+                },
+                {
+                    "gate": "H",
+                    "qubit": 1
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.5,
+                    "qubit": 0
+                },
+                {
+                    "gate": "RY",
+                    "angle": 0.7,
+                    "qubit": 1
+                },
+                {
+                    "gate": "CNOT",
+                    "control": 0,
+                    "target": 1
+                }
+            ]
+        }
+    ]
+}
