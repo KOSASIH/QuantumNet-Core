@@ -1,0 +1,103 @@
+{
+    "synthetic_protocols": [
+        {
+            "id": 1,
+            "name": "Basic Translation Protocol",
+            "description": "A simple protocol for translating basic phrases between two languages.",
+            "source_language": "English",
+            "target_language": "Spanish",
+            "steps": [
+                {
+                    "step_id": 1,
+                    "action": "Tokenization",
+                    "details": "Split the input text into individual words."
+                },
+                {
+                    "step_id": 2,
+                    "action": "Translation",
+                    "details": "Translate each token from English to Spanish."
+                },
+                {
+                    "step_id": 3,
+                    "action": "Reconstruction",
+                    "details": "Reconstruct the translated tokens into a coherent sentence."
+                }
+            ],
+            "example": {
+                "input": "Hello, how are you?",
+                "output": "Hola, ¿cómo estás?"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Contextual Translation Protocol",
+            "description": "A protocol that considers context for translating phrases.",
+            "source_language": "French",
+            "target_language": "German",
+            "steps": [
+                {
+                    "step_id": 1,
+                    "action": "Context Analysis",
+                    "details": "Analyze the context of the input phrase."
+                },
+                {
+                    "step_id": 2,
+                    "action": "Tokenization",
+                    "details": "Split the input text into individual words."
+                },
+                {
+                    "step_id": 3,
+                    "action": "Translation with Context",
+                    "details": "Translate each token considering the context."
+                },
+                {
+                    "step_id": 4,
+                    "action": "Reconstruction",
+                    "details": "Reconstruct the translated tokens into a coherent sentence."
+                }
+            ],
+            "example": {
+                "input": "Je suis très heureux.",
+                "output": "Ich bin sehr glücklich."
+            }
+        },
+        {
+            "id": 3,
+            "name": "Technical Document Translation Protocol",
+            "description": "A protocol designed for translating technical documents with precision.",
+            "source_language": "Chinese",
+            "target_language": "English",
+            "steps": [
+                {
+                    "step_id": 1,
+                    "action": "Terminology Extraction",
+                    "details": "Extract technical terms from the document."
+                },
+                {
+                    "step_id": 2,
+                    "action": "Tokenization",
+                    "details": "Split the input text into individual words."
+                },
+                {
+                    "step_id": 3,
+                    "action": "Translation with Terminology",
+                    "details": "Translate each token while preserving technical terminology."
+                },
+                {
+                    "step_id": 4,
+                    "action": "Quality Assurance",
+                    "details": "Review the translation for accuracy and consistency."
+                },
+                {
+                    "step_id": 5,
+                    "action": "Reconstruction",
+                    "details": "Reconstruct the translated tokens into a coherent document."
+                }
+            ],
+            "example": {
+                "input": "量子计算是未来的技术。",
+                "output": "Quantum computing is the technology of the future."
+            }
+        }
+    ]
+}
