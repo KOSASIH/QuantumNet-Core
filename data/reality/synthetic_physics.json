@@ -1,0 +1,59 @@
+{
+    "alternative_physics_models": [
+        {
+            "model_id": "model_001",
+            "name": "Quantum Gravity Theory",
+            "description": "A theoretical framework that attempts to describe gravity according to the principles of quantum mechanics.",
+            "parameters": {
+                "gravitational_constant": 6.67430e-11,
+                "planck_length": 1.616255e-35,
+                "planck_time": 5.391247e-44
+            },
+            "theoretical_foundation": "Combines general relativity and quantum mechanics."
+        },
+        {
+            "model_id": "model_002",
+            "name": "String Theory",
+            "description": "A theoretical framework in which point-like particles are replaced by one-dimensional strings.",
+            "parameters": {
+                "string_tension": 1.0,
+                "extra_dimensions": 10,
+                "vibrational_modes": 5
+            },
+            "theoretical_foundation": "Unifies all fundamental forces and particles."
+        },
+        {
+            "model_id": "model_003",
+            "name": "Loop Quantum Gravity",
+            "description": "A theory that attempts to quantize gravity by describing the fabric of spacetime as a network of finite loops.",
+            "parameters": {
+                "loop_size": 1.0,
+                "spin_networks": 100,
+                "quantum_states": 50
+            },
+            "theoretical_foundation": "Based on the principles of quantum mechanics and general relativity."
+        },
+        {
+            "model_id": "model_004",
+            "name": "Modified Newtonian Dynamics (MOND)",
+            "description": "A hypothesis that proposes modifications to Newton's laws to account for observed galaxy rotation curves.",
+            "parameters": {
+                "acceleration_scale": 1.2e-10,
+                "mass_scale": 1.0,
+                "dark_matter_effect": false
+            },
+            "theoretical_foundation": "Challenges the existence of dark matter."
+        },
+        {
+            "model_id": "model_005",
+            "name": "Quantum Field Theory in Curved Spacetime",
+            "description": "A framework that combines quantum field theory with general relativity to describe particle physics in a gravitational field.",
+            "parameters": {
+                "curvature_scale": 1.0,
+                "field_strength": 0.5,
+                "interaction_coupling": 0.1
+            },
+            "theoretical_foundation": "Integrates quantum mechanics with general relativity."
+        }
+    ]
+        }
