@@ -1,5 +1,3 @@
-### Updated `qss_visualization.py`
-
 """
 Visualization utilities for the Quantum Singularity Shield (QSS).
 This module provides functions for visualizing quantum states, probability distributions,
