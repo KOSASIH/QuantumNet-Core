@@ -1,5 +1,3 @@
-### `multiversal_simulator.py`
-
 """
 Multiversal Quantum Simulator.
 This module provides functionality to simulate quantum systems across multiple dimensions
