@@ -1,5 +1,3 @@
-### Updated `qtda_analyzer.py`
-
 """
 Quantum Topological Data Analysis for multiversal entanglement synchronization.
 """
