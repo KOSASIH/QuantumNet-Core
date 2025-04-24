@@ -1,5 +1,3 @@
-### `mes_utils.py`
-
 """
 Multiversal Entanglement Synchronizer Utilities.
 This module provides utility functions for managing and analyzing
