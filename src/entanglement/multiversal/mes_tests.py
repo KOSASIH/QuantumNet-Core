@@ -1,5 +1,3 @@
-### `mes_tests.py`
-
 import unittest
 import numpy as np
 from mes_utils import (
