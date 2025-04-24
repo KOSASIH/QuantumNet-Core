@@ -1,0 +1,88 @@
+{
+    "network_topologies": [
+        {
+            "topology_id": "topology_001",
+            "name": "Star Topology",
+            "description": "A central node connected to multiple peripheral nodes.",
+            "num_nodes": 10,
+            "connections": [
+                {"from": "Central Node", "to": "Node 1"},
+                {"from": "Central Node", "to": "Node 2"},
+                {"from": "Central Node", "to": "Node 3"},
+                {"from": "Central Node", "to": "Node 4"},
+                {"from": "Central Node", "to": "Node 5"},
+                {"from": "Central Node", "to": "Node 6"},
+                {"from": "Central Node", "to": "Node 7"},
+                {"from": "Central Node", "to": "Node 8"},
+                {"from": "Central Node", "to": "Node 9"},
+                {"from": "Central Node", "to": "Node 10"}
+            ],
+            "scalability": "High"
+        },
+        {
+            "topology_id": "topology_002",
+            "name": "Mesh Topology",
+            "description": "Every node is connected to every other node, providing high redundancy.",
+            "num_nodes": 5,
+            "connections": [
+                {"from": "Node 1", "to": "Node 2"},
+                {"from": "Node 1", "to": "Node 3"},
+                {"from": "Node 1", "to": "Node 4"},
+                {"from": "Node 1", "to": "Node 5"},
+                {"from": "Node 2", "to": "Node 3"},
+                {"from": "Node 2", "to": "Node 4"},
+                {"from": "Node 2", "to": "Node 5"},
+                {"from": "Node 3", "to": "Node 4"},
+                {"from": "Node 3", "to": "Node 5"},
+                {"from": "Node 4", "to": "Node 5"}
+            ],
+            "scalability": "Very High"
+        },
+        {
+            "topology_id": "topology_003",
+            "name": "Ring Topology",
+            "description": "Each node is connected to two other nodes, forming a circular structure.",
+            "num_nodes": 6,
+            "connections": [
+                {"from": "Node 1", "to": "Node 2"},
+                {"from": "Node 2", "to": "Node 3"},
+                {"from": "Node 3", "to": "Node 4"},
+                {"from": "Node 4", "to": "Node 5"},
+                {"from": "Node 5", "to": "Node 6"},
+                {"from": "Node 6", "to": "Node 1"}
+            ],
+            "scalability": "Moderate"
+        },
+        {
+            "topology_id": "topology_004",
+            "name": "Tree Topology",
+            "description": "A hierarchical structure with a root node and sub-nodes.",
+            "num_nodes": 7,
+            "connections": [
+                {"from": "Root Node", "to": "Child Node 1"},
+                {"from": "Root Node", "to": "Child Node 2"},
+                {"from": "Child Node 1", "to": "Grandchild Node 1"},
+                {"from": "Child Node 1", "to": "Grandchild Node 2"},
+                {"from": "Child Node 2", "to": "Grandchild Node 3"}
+            ],
+            "scalability": "High"
+        },
+        {
+            "topology_id": "topology_005",
+            "name": "Hybrid Topology",
+            "description": "A combination of different topologies to leverage their strengths.",
+            "num_nodes": 8,
+            "connections": [
+                {"from": "Node 1", "to": "Node 2"},
+                {"from": "Node 1", "to": "Node 3"},
+                {"from": "Node 2", "to": "Node 4"},
+                {"from": "Node 3", "to": "Node 5"},
+                {"from": "Node 4", "to": "Node 6"},
+                {"from": "Node 5", "to": "Node 7"},
+                {"from": "Node 6", "to": "Node 8"},
+                {"from": "Node 7", "to": "Node 8"}
+            ],
+            "scalability": "Very High"
+        }
+    ]
+}
