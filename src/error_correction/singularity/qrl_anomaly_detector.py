@@ -1,5 +1,3 @@
-### Updated `qrl_anomaly_detector.py`
-
 """
 Quantum Reinforcement Learning (QRL) Anomaly Detector for detecting anomalies
 in quantum states, particularly in the context of singularities.
