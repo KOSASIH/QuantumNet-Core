@@ -1,5 +1,3 @@
-### Updated `qgt_strategist.py`
-
 """
 Quantum Game Theory for diplomatic strategy optimization.
 This module uses PennyLane to model quantum strategies and optimize them
