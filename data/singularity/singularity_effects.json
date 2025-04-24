@@ -1,0 +1,59 @@
+{
+    "singularity_effects": [
+        {
+            "effect_id": "effect_001",
+            "name": "Temporal Distortion",
+            "description": "A phenomenon where time appears to slow down or speed up in the vicinity of a singularity.",
+            "intensity": 0.85,
+            "duration": "5 minutes",
+            "observations": [
+                "Time dilation observed at 10 meters from the singularity.",
+                "Subjects report feeling disoriented."
+            ]
+        },
+        {
+            "effect_id": "effect_002",
+            "name": "Gravitational Lensing",
+            "description": "The bending of light around a massive object, causing distorted images of background objects.",
+            "intensity": 0.90,
+            "duration": "Variable",
+            "observations": [
+                "Light from distant stars appears warped.",
+                "Multiple images of the same celestial object observed."
+            ]
+        },
+        {
+            "effect_id": "effect_003",
+            "name": "Spacetime Rippling",
+            "description": "Fluctuations in spacetime geometry caused by the presence of a singularity.",
+            "intensity": 0.75,
+            "duration": "Continuous",
+            "observations": [
+                "Ripples detected in spacetime fabric.",
+                "Increased gravitational waves in the vicinity."
+            ]
+        },
+        {
+            "effect_id": "effect_004",
+            "name": "Quantum Fluctuations",
+            "description": "Random variations in energy levels and particle states near a singularity.",
+            "intensity": 0.95,
+            "duration": "Short bursts",
+            "observations": [
+                "Unpredictable energy spikes recorded.",
+                "Particle decay rates vary significantly."
+            ]
+        },
+        {
+            "effect_id": "effect_005",
+            "name": "Event Horizon Phenomena",
+            "description": "Effects observed at the boundary of a black hole, including time dilation and extreme gravitational forces.",
+            "intensity": 1.0,
+            "duration": "N/A",
+            "observations": [
+                "No information can escape beyond the event horizon.",
+                "Extreme tidal forces detected."
+            ]
+        }
+    ]
+}
