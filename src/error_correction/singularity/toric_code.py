@@ -1,5 +1,3 @@
-### Updated `toric_code.py`
-
 """
 Topological toric code for singularity-resilient quantum error correction.
 This implementation uses Qiskit to create a quantum circuit that applies
