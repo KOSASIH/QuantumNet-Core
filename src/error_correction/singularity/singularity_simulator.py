@@ -1,5 +1,3 @@
-### Updated `singularity_simulator.py`
-
 """
 Singularity Simulator for simulating the effects of singularities on quantum states.
 This module provides functionality to generate quantum states, apply singularity effects,
