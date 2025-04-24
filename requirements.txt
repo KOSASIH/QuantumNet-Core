@@ -2,15 +2,15 @@
 qiskit==0.45.0          # Qiskit for quantum computing
 qiskit-optimization==0.5.0  # Qiskit optimization library
 pennylane==0.33.0       # PennyLane for quantum machine learning
-cirq==0.13.0            # Cirq for quantum circuit simulation
+cirq==1.1.0             # Cirq for quantum circuit simulation
 
 # Numerical and scientific computing
 numpy==1.26.0           # NumPy for numerical operations
-scipy==1.9.0            # SciPy for scientific computing
-scikit-learn==1.5.1     # Scikit-learn for machine learning
+scipy==1.11.0           # For QTDA in MES
+scikit-learn==1.3.0     # Scikit-learn for machine learning
+cupy==12.0.0            # CuPy for GPU-accelerated computing
 
 # Data visualization libraries
-matplotlib==3.5.0       # Matplotlib for plotting and visualization
 plotly==5.15.0          # Interactive graphing library for Python
 
 # Web framework for building APIs
@@ -34,3 +34,4 @@ libp2p==0.1.0           # Modular network stack for building peer-to-peer applic
 torch==2.0.0            # PyTorch for QNN and QNLP
 redis==4.5.1            # Redis for cache_manager.py
 cryptography==41.0.3    # Cryptography for cache_manager.py
+ray==2.6.0              # Ray for distributed computing
