@@ -1,5 +1,3 @@
-### `mes_visualization.py`
-
 """
 Multiversal Entanglement Synchronizer Visualization Utilities.
 This module provides functions for visualizing quantum states,
