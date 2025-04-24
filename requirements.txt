@@ -3,6 +3,7 @@ qiskit==0.45.0          # Qiskit for quantum computing
 qiskit-optimization==0.5.0  # Qiskit optimization library
 pennylane==0.33.0       # PennyLane for quantum machine learning
 cirq==1.1.0             # Cirq for quantum circuit simulation
+tensorflow-quantum==0.7.2  # For quantum thermodynamics simulation
 
 # Numerical and scientific computing
 numpy==1.26.0           # NumPy for numerical operations
