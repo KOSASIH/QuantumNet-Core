@@ -1,5 +1,3 @@
-### `entanglement_swapper.py`
-
 """
 Entanglement Swapper for Multiversal Quantum Systems.
 This module provides functionality to perform entanglement swapping
