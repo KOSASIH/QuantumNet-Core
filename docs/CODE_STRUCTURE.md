@@ -1,16 +1,16 @@
 QuantumNet-Core/
 │
-├── README.md                         # Project overview, installation, and usage instructions (updated with MES, AQRA-2, QSS, AQDE, QISF)
+├── README.md                         # Project overview, installation, and usage instructions (updated with MES, AQRA-2, QSS, AQDE, QISF, QTEP, AQDN, QEH, AQCS, QCMF)
 ├── LICENSE                           # License information (e.g., MIT or Apache 2.0)
 ├── CONTRIBUTING.md                   # Guidelines for contributing (updated for open-source collaboration)
 ├── CHANGELOG.md                      # Record of changes (includes new autonomous features)
-├── requirements.txt                  # Dependencies (updated with scipy for QTDA, ray for scalability)
+├── requirements.txt                  # Dependencies (updated with scipy for QTDA, ray for scalability, tensorflow-quantum for QEH)
 │
 ├── docs/                             # Documentation files
 │   ├── index.md                      # Main documentation index (updated with new features overview)
 │   ├── installation.md               # Installation instructions (includes new dependencies)
 │   ├── usage.md                      # Usage guide (includes examples for new modules)
-│   ├── algorithms.md                 # Algorithm overview (updated with QTDA, QGAN, QRL, QGT, QSI for new features)
+│   ├── algorithms.md                 # Algorithm overview (updated with QTDA, QGAN, QRL, QGT, QSI, QFT, QPCA, QVAE, AdS/CFT for new features)
 │   ├── architecture.md               # Project architecture (updated with autonomous systems integration)
 │   ├── tutorials/                    # Tutorials for users
 │   │   ├── entanglement_tutorial.md   # Tutorial on quantum entanglement
@@ -34,11 +34,16 @@ QuantumNet-Core/
 │   │   ├── universal_translator_tutorial.md # Tutorial on Quantum Universal Translator (QUT)
 │   │   ├── resource_optimizer_tutorial.md # Tutorial on Quantum Resource Hyper-Optimizer (QRHO)
 │   │   ├── consciousness_tutorial.md  # Tutorial on Quantum Consciousness Emulator (QCE)
-│   │   ├── multiversal_tutorial.md    # NEW: Tutorial on Multiversal Entanglement Synchronizer (MES)
-│   │   ├── reality_adapter_tutorial.md # NEW: Tutorial on Autonomous Quantum Reality Adapter (AQRA-2)
-│   │   ├── singularity_tutorial.md    # NEW: Tutorial on Quantum Singularity Shield (QSS)
-│   │   ├── diplomacy_tutorial.md      # NEW: Tutorial on Autonomous Quantum Diplomacy Engine (AQDE)
-│   │   └── scalability_tutorial.md    # NEW: Tutorial on Quantum Infinite Scalability Framework (QISF)
+│   │   ├── multiversal_tutorial.md    # Tutorial on Multiversal Entanglement Synchronizer (MES)
+│   │   ├── reality_adapter_tutorial.md # Tutorial on Autonomous Quantum Reality Adapter (AQRA-2)
+│   │   ├── singularity_tutorial.md    # Tutorial on Quantum Singularity Shield (QSS)
+│   │   ├── diplomacy_tutorial.md      # Tutorial on Autonomous Quantum Diplomacy Engine (AQDE)
+│   │   ├── scalability_tutorial.md    # Tutorial on Quantum Infinite Scalability Framework (QISF)
+│   │   ├── temporal_tutorial.md       # NEW: Tutorial on Quantum Temporal Entanglement Processor (QTEP)
+│   │   ├── dimensional_tutorial.md    # NEW: Tutorial on Autonomous Quantum Dimensional Navigator (AQDN)
+│   │   ├── entropy_tutorial.md        # NEW: Tutorial on Quantum Entropy Harmonizer (QEH)
+│   │   ├── civilization_tutorial.md   # NEW: Tutorial on Autonomous Quantum Civilization Synthesizer (AQCS)
+│   │   └── memory_tutorial.md         # NEW: Tutorial on Quantum Cosmic Memory Fabric (QCMF)
 │   └── api_reference.md              # API reference (updated with new modules)
 │
 ├── src/                              # Source code for the project
@@ -48,7 +53,7 @@ QuantumNet-Core/
 │   │   ├── entanglement_utils.py     # Utility functions for entanglement
 │   │   ├── entanglement_tests.py     # Tests for entanglement functionalities
 │   │   ├── entanglement_visualization.py # Visualization tools for entanglement
-│   │   ├── multiversal/              # NEW: Submodule for Multiversal Entanglement Synchronizer (MES)
+│   │   ├── multiversal/              # Submodule for Multiversal Entanglement Synchronizer (MES)
 │   │   │   ├── __init__.py           # Package initialization
 │   │   │   ├── qtda_analyzer.py      # QTDA for topological analysis of quantum states
 │   │   │   ├── entanglement_swapper.py # Entanglement swapping across dimensions
@@ -56,6 +61,14 @@ QuantumNet-Core/
 │   │   │   ├── mes_utils.py          # Utility functions for MES
 │   │   │   ├── mes_visualization.py  # Visualization tools for topological structures
 │   │   │   └── mes_tests.py          # Tests for MES functionalities
+│   │   ├── temporal/                 # NEW: Submodule for Quantum Temporal Entanglement Processor (QTEP)
+│   │   │   ├── __init__.py           # Package initialization
+│   │   │   ├── qft_processor.py      # QFT for temporal state processing
+│   │   │   ├── causal_inference.py    # Quantum causal inference for temporal predictions
+│   │   │   ├── temporal_simulator.py  # Simulation of temporal effects
+│   │   │   ├── qtep_utils.py         # Utility functions for QTEP
+│   │   │   ├── qtep_visualization.py # Visualization tools for temporal states
+│   │   │   └── qtep_tests.py         # Tests for QTEP functionalities
 │   ├── quantum_state/                # Module for quantum states
 │   │   ├── __init__.py               # Package initialization
 │   │   ├── state_vector.py           # Functions for state vector representation
@@ -102,7 +115,7 @@ QuantumNet-Core/
 │   │   │   ├── protocol_mapper.py    # Mapping protocols to universal representation
 │   │   │   ├── qut_utils.py          # Utility functions for QUT
 │   │   │   └── qut_tests.py          # Tests for QUT functionalities
-│   │   ├── diplomacy/                # NEW: Submodule for Autonomous Quantum Diplomacy Engine (AQDE)
+│   │   ├── diplomacy/                # Submodule for Autonomous Quantum Diplomacy Engine (AQDE)
 │   │   │   ├── __init__.py           # Package initialization
 │   │   │   ├── qgt_strategist.py     # Quantum Game Theory for diplomatic strategies
 │   │   │   ├── qnlp_communicator.py  # QNLP for cross-species communication
@@ -110,6 +123,14 @@ QuantumNet-Core/
 │   │   │   ├── aqde_utils.py         # Utility functions for AQDE
 │   │   │   ├── aqde_visualization.py # Visualization tools for diplomatic strategies
 │   │   │   └── aqde_tests.py         # Tests for AQDE functionalities
+│   │   ├── civilization/             # NEW: Submodule for Autonomous Quantum Civilization Synthesizer (AQCS)
+│   │   │   ├── __init__.py           # Package initialization
+│   │   │   ├── qvae_generator.py     # QVAE for generating civilization models
+│   │   │   ├── social_dynamics.py    # Quantum social dynamics for simulation
+│   │   │   ├── civilization_simulator.py # Simulation of alien civilizations
+│   │   │   ├── aqcs_utils.py         # Utility functions for AQCS
+│   │   │   ├── aqcs_visualization.py # Visualization tools for civilization models
+│   │   │   └── aqcs_tests.py         # Tests for AQCS functionalities
 │   ├── error_correction/             # Module for quantum error correction
 │   │   ├── __init__.py               # Package initialization
 │   │   ├── surface_code.py           # Implementation of surface code error correction
@@ -136,7 +157,7 @@ QuantumNet-Core/
 │   │   │   ├── qgrm_utils.py         # Utility functions for QGRM
 │   │   │   ├── qgrm_visualization.py # Visualization tools for gravitational resilience
 │   │   │   └── qgrm_tests.py         # Tests for QGRM functionalities
-│   │   ├── singularity/              # NEW: Submodule for Quantum Singularity Shield (QSS)
+│   │   ├── singularity/              # Submodule for Quantum Singularity Shield (QSS)
 │   │   │   ├── __init__.py           # Package initialization
 │   │   │   ├── toric_code.py         # Topological codes for singularity-resilient QEC
 │   │   │   ├── qrl_anomaly_detector.py # QRL for detecting singularity anomalies
@@ -144,6 +165,14 @@ QuantumNet-Core/
 │   │   │   ├── qss_utils.py          # Utility functions for QSS
 │   │   │   ├── qss_visualization.py  # Visualization tools for singularity protection
 │   │   │   └── qss_tests.py          # Tests for QSS functionalities
+│   │   ├── entropy/                  # NEW: Submodule for Quantum Entropy Harmonizer (QEH)
+│   │   │   ├── __init__.py           # Package initialization
+│   │   │   ├── entropy_estimator.py  # Von Neumann entropy estimation
+│   │   │   ├── thermo_balancer.py    # Quantum thermodynamics for entropy balancing
+│   │   │   ├── entropy_simulator.py  # Simulation of entropy fluctuations
+│   │   │   ├── qeh_utils.py          # Utility functions for QEH
+│   │   │   ├── qeh_visualization.py  # Visualization tools for entropy distributions
+│   │   │   └── qeh_tests.py          # Tests for QEH functionalities
 │   │   ├── qec_utils.py              # Utility functions for quantum error correction
 │   │   ├── qec_visualization.py      # Visualization tools for error correction
 │   │   └── qec_tests.py              # Tests for error correction functionalities
@@ -220,20 +249,28 @@ QuantumNet-Core/
 │   │   │   ├── crisis_simulator.py   # Simulation of crisis scenarios
 │   │   │   ├── qce_utils.py          # Utility functions for QCE
 │   │   │   └── qce_tests.py          # Tests for QCE functionalities
-│   │   ├── reality_adapter/          # NEW: Submodule for Autonomous Quantum Reality Adapter (AQRA-2)
+│   │   ├── reality_adapter/          # Submodule for Autonomous Quantum Reality Adapter (AQRA-2)
 │   │   │   ├── __init__.py           # Package initialization
 │   │   │   ├── qgan_physics_model.py # QGAN for generating alternative physics models
 │   │   │   ├── reality_simulator.py  # Simulation of alternative physical realities
 │   │   │   ├── aqra2_utils.py        # Utility functions for AQRA-2
 │   │   │   ├── aqra2_visualization.py # Visualization tools for physics models
 │   │   │   └── aqra2_tests.py        # Tests for AQRA-2 functionalities
-│   │   ├── scalability/              # NEW: Submodule for Quantum Infinite Scalability Framework (QISF)
+│   │   ├── scalability/              # Submodule for Quantum Infinite Scalability Framework (QISF)
 │   │   │   ├── __init__.py           # Package initialization
 │   │   │   ├── qsi_optimizer.py      # Quantum Swarm Intelligence for network topology optimization
 │   │   │   ├── network_simulator.py  # Simulation of large-scale networks
 │   │   │   ├── qisf_utils.py         # Utility functions for QISF
 │   │   │   ├── qisf_visualization.py # Visualization tools for network topologies
 │   │   │   └── qisf_tests.py         # Tests for QISF functionalities
+│   │   ├── dimensional/              # NEW: Submodule for Autonomous Quantum Dimensional Navigator (AQDN)
+│   │   │   ├── __init__.py           # Package initialization
+│   │   │   ├── qpca_reducer.py       # QPCA for dimensional reduction
+│   │   │   ├── qrl_navigator.py      # QRL for navigating higher-dimensional spaces
+│   │   │   ├── dimensional_simulator.py # Simulation of higher-dimensional spaces
+│   │   │   ├── aqdn_utils.py         # Utility functions for AQDN
+│   │   │   ├── aqdn_visualization.py # Visualization tools for dimensional structures
+│   │   │   └── aqdn_tests.py         # Tests for AQDN functionalities
 │   ├── security/                     # Module for quantum security
 │   │   ├── __init__.py               # Package initialization
 │   │   ├── qtdr/                     # Submodule for Quantum Threat Detection and Response (QTDR)
@@ -251,6 +288,16 @@ QuantumNet-Core/
 │   │   │   └── qati_tests.py         # Tests for QATI functionalities
 │   │   ├── qkd_bb84.py               # Implementation of BB84 quantum key distribution protocol
 │   │   └── lattice_crypto.py         # Implementation of post-quantum cryptographic algorithms
+│   ├── storage/                      # NEW: Module for quantum storage systems
+│   │   ├── __init__.py               # Package initialization
+│   │   ├── memory/                   # NEW: Submodule for Quantum Cosmic Memory Fabric (QCMF)
+│   │   │   ├── __init__.py           # Package initialization
+│   │   │   ├── holographic_memory.py # Holographic memory based on AdS/CFT
+│   │   │   ├── quantum_ledger.py     # Quantum distributed ledger for memory
+│   │   │   ├── memory_simulator.py   # Simulation of cosmic memory structures
+│   │   │   ├── qcmf_utils.py         # Utility functions for QCMF
+│   │   │   ├── qcmf_visualization.py # Visualization tools for memory structures
+│   │   │   └── qcmf_tests.py         # Tests for QCMF functionalities
 │   ├── utils/                        # Utility functions for the project
 │   │   ├── __init__.py               # Package initialization
 │   │   ├── logger.py                 # Logging utilities
@@ -261,8 +308,10 @@ QuantumNet-Core/
 │   │   ├── cache_manager.py          # Caching mechanism for quantum computations
 │   │   ├── telemetry_utils.py        # Utilities for telemetry data processing
 │   │   ├── visualization_utils.py    # Shared visualization utilities
-│   │   ├── topology_utils.py         # NEW: Utilities for topological data analysis (for MES)
-│   │   └── swarm_utils.py            # NEW: Utilities for quantum swarm intelligence (for QISF)
+│   │   ├── topology_utils.py         # Utilities for topological data analysis (for MES)
+│   │   ├── swarm_utils.py            # Utilities for quantum swarm intelligence (for QISF)
+│   │   ├── temporal_utils.py         # NEW: Utilities for temporal entanglement (for QTEP)
+│   │   └── holographic_utils.py      # NEW: Utilities for holographic memory (for QCMF)
 │   ├── integration/                  # Module for integrating with external libraries
 │   │   ├── __init__.py               # Package initialization
 │   │   ├── qiskit_integration.py     # Integration with Qiskit
@@ -298,11 +347,16 @@ QuantumNet-Core/
 │   ├── test_universal_translator.py  # Tests for Quantum Universal Translator (QUT)
 │   ├── test_resource_optimizer.py    # Tests for Quantum Resource Hyper-Optimizer (QRHO)
 │   ├── test_consciousness.py         # Tests for Quantum Consciousness Emulator (QCE)
-│   ├── test_multiversal.py           # NEW: Tests for Multiversal Entanglement Synchronizer (MES)
-│   ├── test_reality_adapter.py       # NEW: Tests for Autonomous Quantum Reality Adapter (AQRA-2)
-│   ├── test_singularity.py           # NEW: Tests for Quantum Singularity Shield (QSS)
-│   ├── test_diplomacy.py             # NEW: Tests for Autonomous Quantum Diplomacy Engine (AQDE)
-│   ├── test_scalability.py           # NEW: Tests for Quantum Infinite Scalability Framework (QISF)
+│   ├── test_multiversal.py           # Tests for Multiversal Entanglement Synchronizer (MES)
+│   ├── test_reality_adapter.py       # Tests for Autonomous Quantum Reality Adapter (AQRA-2)
+│   ├── test_singularity.py           # Tests for Quantum Singularity Shield (QSS)
+│   ├── test_diplomacy.py             # Tests for Autonomous Quantum Diplomacy Engine (AQDE)
+│   ├── test_scalability.py           # Tests for Quantum Infinite Scalability Framework (QISF)
+│   ├── test_temporal.py              # NEW: Tests for Quantum Temporal Entanglement Processor (QTEP)
+│   ├── test_dimensional.py           # NEW: Tests for Autonomous Quantum Dimensional Navigator (AQDN)
+│   ├── test_entropy.py               # NEW: Tests for Quantum Entropy Harmonizer (QEH)
+│   ├── test_civilization.py          # NEW: Tests for Autonomous Quantum Civilization Synthesizer (AQCS)
+│   ├── test_memory.py                # NEW: Tests for Quantum Cosmic Memory Fabric (QCMF)
 │   ├── test_utils.py                 # Tests for utility functions
 │   └── test_integration.py           # Tests for integration functionalities
 │
@@ -331,11 +385,16 @@ QuantumNet-Core/
 │   ├── universal_translator_example.py # Example usage of Quantum Universal Translator (QUT)
 │   ├── resource_optimizer_example.py # Example usage of Quantum Resource Hyper-Optimizer (QRHO)
 │   ├── consciousness_example.py      # Example usage of Quantum Consciousness Emulator (QCE)
-│   ├── multiversal_example.py        # NEW: Example usage of Multiversal Entanglement Synchronizer (MES)
-│   ├── reality_adapter_example.py    # NEW: Example usage of Autonomous Quantum Reality Adapter (AQRA-2)
-│   ├── singularity_example.py        # NEW: Example usage of Quantum Singularity Shield (QSS)
-│   ├── diplomacy_example.py          # NEW: Example usage of Autonomous Quantum Diplomacy Engine (AQDE)
-│   ├── scalability_example.py        # NEW: Example usage of Quantum Infinite Scalability Framework (QISF)
+│   ├── multiversal_example.py        # Example usage of Multiversal Entanglement Synchronizer (MES)
+│   ├── reality_adapter_example.py    # Example usage of Autonomous Quantum Reality Adapter (AQRA-2)
+│   ├── singularity_example.py        # Example usage of Quantum Singularity Shield (QSS)
+│   ├── diplomacy_example.py          # Example usage of Autonomous Quantum Diplomacy Engine (AQDE)
+│   ├── scalability_example.py        # Example usage of Quantum Infinite Scalability Framework (QISF)
+│   ├── temporal_example.py           # NEW: Example usage of Quantum Temporal Entanglement Processor (QTEP)
+│   ├── dimensional_example.py        # NEW: Example usage of Autonomous Quantum Dimensional Navigator (AQDN)
+│   ├── entropy_example.py            # NEW: Example usage of Quantum Entropy Harmonizer (QEH)
+│   ├── civilization_example.py       # NEW: Example usage of Autonomous Quantum Civilization Synthesizer (AQCS)
+│   ├── memory_example.py             # NEW: Example usage of Quantum Cosmic Memory Fabric (QCMF)
 │   └── integration_example.py        # Example usage of integration with external libraries
 │
 ├── benchmarks/                       # Benchmarking scripts for performance evaluation
@@ -361,11 +420,16 @@ QuantumNet-Core/
 │   ├── benchmark_universal_translator.py # Benchmarking Quantum Universal Translator (QUT)
 │   ├── benchmark_resource_optimizer.py # Benchmarking Quantum Resource Hyper-Optimizer (QRHO)
 │   ├── benchmark_consciousness.py    # Benchmarking Quantum Consciousness Emulator (QCE)
-│   ├── benchmark_multiversal.py      # NEW: Benchmarking Multiversal Entanglement Synchronizer (MES)
-│   ├── benchmark_reality_adapter.py  # NEW: Benchmarking Autonomous Quantum Reality Adapter (AQRA-2)
-│   ├── benchmark_singularity.py      # NEW: Benchmarking Quantum Singularity Shield (QSS)
-│   ├── benchmark_diplomacy.py        # NEW: Benchmarking Autonomous Quantum Diplomacy Engine (AQDE)
-│   ├── benchmark_scalability.py      # NEW: Benchmarking Quantum Infinite Scalability Framework (QISF)
+│   ├── benchmark_multiversal.py      # Benchmarking Multiversal Entanglement Synchronizer (MES)
+│   ├── benchmark_reality_adapter.py  # Benchmarking Autonomous Quantum Reality Adapter (AQRA-2)
+│   ├── benchmark_singularity.py      # Benchmarking Quantum Singularity Shield (QSS)
+│   ├── benchmark_diplomacy.py        # Benchmarking Autonomous Quantum Diplomacy Engine (AQDE)
+│   ├── benchmark_scalability.py      # Benchmarking Quantum Infinite Scalability Framework (QISF)
+│   ├── benchmark_temporal.py         # NEW: Benchmarking Quantum Temporal Entanglement Processor (QTEP)
+│   ├── benchmark_dimensional.py      # NEW: Benchmarking Autonomous Quantum Dimensional Navigator (AQDN)
+│   ├── benchmark_entropy.py          # NEW: Benchmarking Quantum Entropy Harmonizer (QEH)
+│   ├── benchmark_civilization.py     # NEW: Benchmarking Autonomous Quantum Civilization Synthesizer (AQCS)
+│   ├── benchmark_memory.py           # NEW: Benchmarking Quantum Cosmic Memory Fabric (QCMF)
 │
 ├── scripts/                          # Utility scripts for project management
 │   ├── setup_environment.py          # Script for setting up the development environment
@@ -383,11 +447,16 @@ QuantumNet-Core/
 │   ├── start_universal_translator.py # Script for launching Quantum Universal Translator (QUT)
 │   ├── start_resource_optimizer.py   # Script for launching Quantum Resource Hyper-Optimizer (QRHO)
 │   ├── start_consciousness.py        # Script for launching Quantum Consciousness Emulator (QCE)
-│   ├── start_multiversal.py          # NEW: Script for launching Multiversal Entanglement Synchronizer (MES)
-│   ├── start_reality_adapter.py      # NEW: Script for launching Autonomous Quantum Reality Adapter (AQRA-2)
-│   ├── start_singularity.py          # NEW: Script for launching Quantum Singularity Shield (QSS)
-│   ├── start_diplomacy.py            # NEW: Script for launching Autonomous Quantum Diplomacy Engine (AQDE)
-│   ├── start_scalability.py          # NEW: Script for launching Quantum Infinite Scalability Framework (QISF)
+│   ├── start_multiversal.py          # Script for launching Multiversal Entanglement Synchronizer (MES)
+│   ├── start_reality_adapter.py      # Script for launching Autonomous Quantum Reality Adapter (AQRA-2)
+│   ├── start_singularity.py          # Script for launching Quantum Singularity Shield (QSS)
+│   ├── start_diplomacy.py            # Script for launching Autonomous Quantum Diplomacy Engine (AQDE)
+│   ├── start_scalability.py          # Script for launching Quantum Infinite Scalability Framework (QISF)
+│   ├── start_temporal.py             # NEW: Script for launching Quantum Temporal Entanglement Processor (QTEP)
+│   ├── start_dimensional.py          # NEW: Script for launching Autonomous Quantum Dimensional Navigator (AQDN)
+│   ├── start_entropy.py              # NEW: Script for launching Quantum Entropy Harmonizer (QEH)
+│   ├── start_civilization.py         # NEW: Script for launching Autonomous Quantum Civilization Synthesizer (AQCS)
+│   ├── start_memory.py               # NEW: Script for launching Quantum Cosmic Memory Fabric (QCMF)
 │
 ├── data/                             # Datasets for training and simulation
 │   ├── circuits/                     # Datasets for AQCG
@@ -399,16 +468,26 @@ QuantumNet-Core/
 │   │   └── synthetic_protocols.json  # Synthetic protocol data for training
 │   ├── crises/                       # Datasets for QCE
 │   │   └── crisis_scenarios.json     # Synthetic crisis scenarios for training
-│   ├── multiversal/                  # NEW: Datasets for MES
+│   ├── multiversal/                  # Datasets for MES
 │   │   └── multiversal_states.json   # Synthetic multiversal quantum states
-│   ├── reality/                      # NEW: Datasets for AQRA-2
+│   ├── reality/                      # Datasets for AQRA-2
 │   │   └── synthetic_physics.json    # Synthetic alternative physics models
-│   ├── singularity/                  # NEW: Datasets for QSS
+│   ├── singularity/                  # Datasets for QSS
 │   │   └── singularity_effects.json  # Synthetic singularity effect data
-│   ├── diplomacy/                    # NEW: Datasets for AQDE
+│   ├── diplomacy/                    # Datasets for AQDE
 │   │   └── interaction_scenarios.json # Synthetic interaction scenarios with alien entities
-│   └── scalability/                  # NEW: Datasets for QISF
-│       └── network_topologies.json   # Synthetic large-scale network topologies
+│   ├── scalability/                  # Datasets for QISF
+│   │   └── network_topologies.json   # Synthetic large-scale network topologies
+│   ├── temporal/                     # NEW: Datasets for QTEP
+│   │   └── temporal_states.json      # Synthetic temporal quantum states
+│   ├── dimensional/                  # NEW: Datasets for AQDN
+│   │   └── high_dim_spaces.json      # Synthetic higher-dimensional space data
+│   ├── entropy/                      # NEW: Datasets for QEH
+│   │   └── entropy_fluctuations.json # Synthetic entropy fluctuation data
+│   ├── civilization/                 # NEW: Datasets for AQCS
+│   │   └── civilization_models.json  # Synthetic civilization model data
+│   ├── memory/                       # NEW: Datasets for QCMF
+│   │   └── holographic_data.json     # Synthetic holographic memory data
 │
 └── .github/                          # GitHub configurations for project management
     ├── ISSUE_TEMPLATE.md             # Template for GitHub issues
