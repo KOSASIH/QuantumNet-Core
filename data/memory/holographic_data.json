@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "holographic_representation": [0.123, 0.456, 0.789, ..., 0.234],
+        "timestamp": "2023-10-01T00:00:00Z",
+        "metadata": {
+            "description": "Holographic memory entry 0",
+            "category": "image",
+            "quality": 0.85
+        }
+    },
+    {
+        "id": 1,
+        "holographic_representation": [0.987, 0.654, 0.321, ..., 0.098],
+        "timestamp": "2023-10-01T00:00:01Z",
+        "metadata": {
+            "description": "Holographic memory entry 1",
+            "category": "audio",
+            "quality":  0.75
+        }
+    }
+    // More entries...
+]
