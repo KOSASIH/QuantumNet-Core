@@ -32,7 +32,7 @@ sphinx-rtd-theme==1.0.0  # Read the Docs theme for Sphinx
 libp2p==0.1.0           # Modular network stack for building peer-to-peer applications
 
 # Additional libraries
-torch==2.0.0            # PyTorch for QNN and QNLP
+torch==2.7.0            # PyTorch for QNN and QNLP
 redis==4.5.1            # Redis for cache_manager.py
 cryptography==41.0.3    # Cryptography for cache_manager.py
 ray==2.6.0              # Ray for distributed computing
