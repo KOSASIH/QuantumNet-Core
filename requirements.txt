@@ -35,4 +35,4 @@ libp2p==0.1.0           # Modular network stack for building peer-to-peer applic
 torch==2.7.0            # PyTorch for QNN and QNLP
 redis==4.5.4            # Redis for cache_manager.py
 cryptography==44.0.1    # Cryptography for cache_manager.py
-ray==2.6.0              # Ray for distributed computing
+ray==2.43.0              # Ray for distributed computing
